@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" options2="0" suppressMissingRowsNative="false" enableOffline="false" smartForm="false" hide="false" disableSpreading="false" suppressZero="false" calcOnAutoSubmit="false" enableCubeView="false" repeatMemberLabels="false" suppressInvalidScenarioTPs="false" disableSheetProtection="false" planType="1" dir="Forms/Adetth_Do_Not_Delete" autoSubmit="false" readOnly="false" enableFlexForm="false" nativeSuppressMissingRowsOfSmartPush="false" runSmartPushAsynchronously="false" globalAssumptions="false" disableFormatting="false" name="Adetth - 1. Control Form" >
+ <pipPrefs>{&quot;_sP&quot;:{&quot;_sVer&quot;:1.2},&quot;historicalScenarioId&quot;:-1,&quot;historicalVersionId&quot;:-1,&quot;historicalSource&quot;:-1,&quot;historicalCubePrefsMap&quot;:{},&quot;memberOverride&quot;:[],&quot;_predictionOptions&quot;:{&quot;_predictionInterval&quot;:2,&quot;_isImputeFutureValues&quot;:false,&quot;_errorMeasure&quot;:3,&quot;_forecastTechnique&quot;:0,&quot;_leadValue&quot;:0,&quot;_holdOutPeriod&quot;:0,&quot;_AdjustOutliers&quot;:true,&quot;_FillInMissingValues&quot;:true,&quot;_PeriodsPerCycle&quot;:0,&quot;_yearlySeasonalOverride&quot;:false,&quot;_SeasonalMethods&quot;:true,&quot;_NonSeasonalMethods&quot;:true,&quot;_ARIMA&quot;:true,&quot;_ARIMAExtendedSearch&quot;:false,&quot;_BoxCoxTransformationType&quot;:0,&quot;_ARIMAModelSelectionType&quot;:2,&quot;_ScreenDetectionMethod&quot;:0,&quot;_MSDStdDev&quot;:3.0,&quot;_MADStdDev&quot;:3.0,&quot;_IQDStdDev&quot;:2.22,&quot;_ScreenAdjustmentMethod&quot;:0,&quot;_neighborInterpolationType&quot;:0,&quot;_Neighbors&quot;:1,&quot;_IncludeEvents&quot;:false,&quot;_AutomaticallyDetectEvents&quot;:0,&quot;_accuracyThreshold&quot;:0.0,&quot;_minimumMissingValueThreshold&quot;:50.0,&quot;_predictionPeriodOverride&quot;:false,&quot;_fillMissingLastPeriodHistData&quot;:0},&quot;_calendarUuid&quot;:null,&quot;_predictDynCalcMbrs&quot;:false,&quot;_sVer&quot;:1.2}</pipPrefs>
+ <query>
+ <columns width="100" >
+ <segment>
+ <dimension displayMemberFormulaDesc="false" name="Period" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="YearTotal" selectionType="Auto" />
+</function>
+</dimension>
+</segment>
+</columns>
+ <rows height="22" >
+ <segment>
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="Descendants" offset="0" >
+ <member name="Balance Sheet_Training" selectionType="Auto" />
+</function>
+</dimension>
+</segment>
+</rows>
+ <pov>
+ <dimension displayMemberFormulaDesc="false" name="Years" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Year" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Scenario" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="OEP_No Scenario" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Version" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="OEP_No Version" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Currency" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Entity" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Entity" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Product" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Product" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Employee data" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Employee data" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Cost Center" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Cost Center" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Intercompany" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No InterCompany" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="LoB" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No LoB" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Department" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Department" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Value" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Value" selectionType="Auto" visible="true" />
+</dimension>
+</pov>
+</query>
+ <businessRules>
+ <businessRule calcType="3" name="CURRENCY" planType="1" />
+ <businessRule calcType="3" name="DEFAULT" planType="1" />
+</businessRules>
+ <displayOptions>
+ <precision useCurrencyPrecision="false" nonCurrencyMax="-1" nonCurrencyMin="0" currencyMax="-1" percentageMax="-1" currencyMin="0" percentageMin="0" />
+ <display multiCurrency="false" enableMassAllocation="false" enableGridSpread="true" hideSaveConfirmMessage="false" accountAnnotation="false" enableAdHoc="false" poundMissing="true" enableAttributeDisplay="false" enableCellAttach="true" />
+ <printOptions>
+ <pageSettings pageSize="A4" orientation="0" font="" fontSize="8" rowHeaderPercentage="35" numDataCols="10" />
+ <format supportingDetails="false" applyPrecision="false" repeatHeaders="true" reverseSupport="false" formatData="true" />
+ <printDisplay currency="true" shading="true" cellNotes="false" attribute="true" accountAnnotation="true" />
+</printOptions>
+ <smartViewOptions enableForSmartSlice="false" enableOfflineUsage="false" />
+</displayOptions>
+ <dataValidationRules>
+ <dataValidationRulesOptions>
+ <RunValidationsAsLoggedInUser>true</RunValidationsAsLoggedInUser>
+ <ValidateOnlyForPagesWithBlocks>true</ValidateOnlyForPagesWithBlocks>
+ <ValidateOnlyForUsersWithAccessToForm>true</ValidateOnlyForUsersWithAccessToForm>
+ <ReplaceUserVarWithPuMember>false</ReplaceUserVarWithPuMember>
+ <LoopOverEveryPossiblePuUserVarValue>false</LoopOverEveryPossiblePuUserVarValue>
+</dataValidationRulesOptions>
+</dataValidationRules>
+ <formFormattings>
+</formFormattings>
+ <smartpush>
+</smartpush>
+</form>

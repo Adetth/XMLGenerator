@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" options2="0" suppressMissingRowsNative="true" enableOffline="false" smartForm="false" hide="false" disableSpreading="false" suppressZero="false" calcOnAutoSubmit="false" enableCubeView="false" repeatMemberLabels="false" suppressInvalidScenarioTPs="false" disableSheetProtection="false" planType="4" dir="Forms/Manpower/Budget" autoSubmit="false" readOnly="false" enableFlexForm="false" nativeSuppressMissingRowsOfSmartPush="false" runSmartPushAsynchronously="false" globalAssumptions="false" disableFormatting="false" name="MPB_1.2 Manage New Hires" >
+ <message>Please right click to add New Hire</message>
+ <description>Manpower Budgeting - Manage New Hires</description>
+ <instruction>&lt;font color=&quot;#0000ee&quot;&gt;&lt;u&gt;&lt;a href=&quot;https://intellicorecg-my.sharepoint.com/:w:/p/chiragb/Ed4FMB7MPnpMmycDrPxFRF0B1ZZ4mp4wbPF-PFQMva5dEQ?e=UCdlrS&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://intellicorecg-my.sharepoint.com/:w:/p/chiragb/Ed4FMB7MPnpMmycDrPxFRF0B1ZZ4mp4wbPF-PFQMva5dEQ?e=UCdlrS&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#0000ee&quot;&gt;&lt;u&gt;&lt;br /&gt;&lt;/u&gt;&lt;/font&gt;&lt;/div&gt;</instruction>
+ <pipPrefs>{&quot;_sP&quot;:{&quot;_sVer&quot;:1.2},&quot;historicalScenarioId&quot;:-1,&quot;historicalVersionId&quot;:-1,&quot;historicalSource&quot;:-1,&quot;historicalCubePrefsMap&quot;:{},&quot;memberOverride&quot;:[],&quot;_predictionOptions&quot;:{&quot;_sP&quot;:{&quot;_ErrorMeasure&quot;:3},&quot;_predictionInterval&quot;:2,&quot;_isImputeFutureValues&quot;:false,&quot;_errorMeasure&quot;:3,&quot;_forecastTechnique&quot;:0,&quot;_leadValue&quot;:0,&quot;_holdOutPeriod&quot;:0,&quot;_AdjustOutliers&quot;:true,&quot;_FillInMissingValues&quot;:true,&quot;_PeriodsPerCycle&quot;:0,&quot;_yearlySeasonalOverride&quot;:false,&quot;_SeasonalMethods&quot;:true,&quot;_NonSeasonalMethods&quot;:true,&quot;_ARIMA&quot;:true,&quot;_ARIMAExtendedSearch&quot;:false,&quot;_BoxCoxTransformationType&quot;:0,&quot;_ARIMAModelSelectionType&quot;:2,&quot;_ScreenDetectionMethod&quot;:0,&quot;_MSDStdDev&quot;:3.0,&quot;_MADStdDev&quot;:3.0,&quot;_IQDStdDev&quot;:2.22,&quot;_ScreenAdjustmentMethod&quot;:0,&quot;_neighborInterpolationType&quot;:0,&quot;_Neighbors&quot;:1,&quot;_IncludeEvents&quot;:false,&quot;_AutomaticallyDetectEvents&quot;:0,&quot;_accuracyThreshold&quot;:0.0,&quot;_minimumMissingValueThreshold&quot;:50.0,&quot;_predictionPeriodOverride&quot;:false,&quot;_fillMissingLastPeriodHistData&quot;:0},&quot;_calendarUuid&quot;:null,&quot;_predictDynCalcMbrs&quot;:false,&quot;_sVer&quot;:1.2}</pipPrefs>
+ <query>
+ <columns suppressInvalid="true" width="100" >
+ <segment showSeparator="true" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Grade Reference" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment>
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Nationality" selectionType="Auto" />
+ <member name="FTE" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment size="-120" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Hire Date" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment size="-150" showSeparator="true" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Remarks" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment showSeparator="true" readOnly="true" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Gross Salary" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment readOnly="true" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="61110101" selectionType="Auto" />
+</function>
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="61110102" selectionType="Auto" />
+</function>
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="61110103" selectionType="Auto" />
+</function>
+ <member exclude="true" name="Exit/Re-entry Cost" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment readOnly="true" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Annual Airfare Allowance" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment showSeparator="true" readOnly="true" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Education Allowance" selectionType="Auto" />
+ <member name="Incentives" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment hide="true" showSeparator="true" readOnly="true" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Employer Pension Contribution" selectionType="Auto" />
+</dimension>
+</segment>
+</columns>
+ <rows height="-24" suppressMissingBlocks="true" suppressInvalid="true" suppressMissing="true" >
+ <segment size="-4" >
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <formula ordinal="1.0" dataType="0" label="Formula Label" formulaValue="" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Employee" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <formula ordinal="2.0" dataType="0" label="Formula Label" formulaValue="" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Position" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <formula ordinal="3.0" dataType="0" label="Formula Label" formulaValue="" />
+</dimension>
+</segment>
+ <segment showSeparator="true" >
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="Input Currencies" selectionType="Auto" />
+</function>
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Employee" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="New Employees" selectionType="Auto" />
+</function>
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Position" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="All Positions" selectionType="Auto" />
+</function>
+</dimension>
+</segment>
+ <segment showSeparator="true" >
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="Input Currencies" selectionType="Auto" />
+</function>
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Employee" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="New Employees" selectionType="Auto" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Position" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="All Positions" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment suppressMissing="true" >
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="Input Currencies" selectionType="Auto" />
+</function>
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Employee" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="New Employees by Activities" selectionType="Auto" />
+</function>
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Position" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="All Positions" selectionType="Auto" />
+</function>
+</dimension>
+</segment>
+ <segment showSeparator="true" >
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="Input Currencies" selectionType="Auto" />
+</function>
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Employee" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="New Employees by Activities" selectionType="Auto" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Position" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="All Positions" selectionType="Auto" />
+</dimension>
+</segment>
+ <segment size="-3" showSeparator="true" >
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <formula ordinal="1.0" dataType="0" label=" " formulaValue="" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Employee" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <formula ordinal="2.0" dataType="0" label=" " formulaValue="" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Position" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <formula ordinal="3.0" dataType="0" label=" " formulaValue="" />
+</dimension>
+</segment>
+</rows>
+ <pages>
+ <segment>
+ <dimension displayMemberFormulaDesc="false" name="Entity" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="All Entities" selectionType="Auto" />
+</function>
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Department" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <function name="ILvl0Descendants" offset="0" >
+ <member name="Total Departments" selectionType="Auto" />
+</function>
+</dimension>
+</segment>
+</pages>
+ <pov>
+ <dimension displayMemberFormulaDesc="false" name="Years" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="&amp;BudYear" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Scenario" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="&amp;BudScenario" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Future" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Future" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Particulars" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Base Amount" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Version" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="&amp;WFP_BudVersion" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="LineItem" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="Line1" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Intercompany" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="No Intercompany" selectionType="Auto" visible="true" />
+</dimension>
+ <dimension displayMemberFormulaDesc="false" name="Period" allowFlexibleDefinition="false" displayAlias="true" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="true" showQualifiedName="never" drillOnSharedMbrs="false" displayName="false" displayConsolidationOperators="false" showCurrency="false" >
+ <member name="BegBalance" selectionType="Auto" visible="true" />
+</dimension>
+</pov>
+</query>
+ <businessRules>
+ <businessRule calcType="3" name="CURRENCY" planType="1" />
+ <businessRule calcType="3" name="DEFAULT" planType="1" />
+ <businessRule calcType="0" name="MPB_1.9 Calculate New Hire Budget" planType="4" runOnSave="true" hidePrompt="true" useMRU="true" />
+ <businessRule calcType="0" name="MPB_1.9 Calculate New Hire Budget Multi-Year" planType="4" hidePrompt="true" useMRU="true" />
+ <businessRule calcType="0" name="Copy Manpower data to Grades" planType="4" hidePrompt="true" useMRU="true" />
+</businessRules>
+ <displayOptions>
+ <precision useCurrencyPrecision="false" nonCurrencyMax="0" nonCurrencyMin="0" currencyMax="0" percentageMax="2" currencyMin="0" percentageMin="0" />
+ <display multiCurrency="false" enableMassAllocation="false" enableGridSpread="true" hideSaveConfirmMessage="false" accountAnnotation="false" enableAdHoc="false" poundMissing="true" enableAttributeDisplay="false" enableCellAttach="true" />
+ <printOptions>
+ <pageSettings pageSize="A4" orientation="0" font="" fontSize="8" rowHeaderPercentage="35" numDataCols="10" />
+ <format supportingDetails="false" applyPrecision="false" repeatHeaders="true" reverseSupport="false" formatData="true" />
+ <printDisplay currency="true" shading="true" cellNotes="false" attribute="true" accountAnnotation="true" />
+</printOptions>
+ <smartViewOptions enableForSmartSlice="false" enableOfflineUsage="false" />
+ <contextMenu>
+ <menu>Plan New Hire</menu>
+</contextMenu>
+</displayOptions>
+ <dataValidationRules>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="false" description="" rowLocation="-1.0" colLocation="5.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="11" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="0" type="1" bgColor="" Valid="true" logicalOperator="0" >
+ <compareValue type="14" value="Account" >
+</compareValue>
+ <compareToValue type="7" value="" >
+ <compareToValueMbrSelection type="2" requiredDimName="Account" selectionMode="2" >
+ <memberSelectionItem queryType="0" memberName="Gross Salary" substVar="" dimension="Account" sequence="1.0" />
+</compareToValueMbrSelection>
+</compareToValue>
+</dataValidationCond>
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="2" styleId="32773" type="5" bgColor="11591910" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="false" description="" rowLocation="-1.0" colLocation="6.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="11" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="0" type="1" bgColor="" Valid="true" logicalOperator="20" >
+ <compareValue type="14" value="Currency" >
+</compareValue>
+ <compareToValue type="7" value="" >
+ <compareToValueMbrSelection type="2" requiredDimName="Currency" selectionMode="2" >
+ <memberSelectionItem queryType="0" memberName="AED" substVar="" dimension="Currency" sequence="1.0" />
+</compareToValueMbrSelection>
+</compareToValue>
+</dataValidationCond>
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="11" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="2" styleId="0" type="2" bgColor="" Valid="true" logicalOperator="0" >
+ <compareValue type="14" value="Account" >
+</compareValue>
+ <compareToValue type="7" value="" >
+ <compareToValueMbrSelection type="2" requiredDimName="Account" selectionMode="2" >
+ <memberSelectionItem queryType="0" memberName="Basic Salary" substVar="" dimension="Account" sequence="1.0" />
+ <memberSelectionItem queryType="0" memberName="Other Allowances" substVar="" dimension="Account" sequence="2.0" />
+</compareToValueMbrSelection>
+</compareToValue>
+</dataValidationCond>
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="3" styleId="32771" type="5" bgColor="11591910" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="11" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="4" styleId="0" type="3" bgColor="" Valid="true" logicalOperator="20" >
+ <compareValue type="14" value="Currency" >
+</compareValue>
+ <compareToValue type="7" value="" >
+ <compareToValueMbrSelection type="2" requiredDimName="Currency" selectionMode="2" >
+ <memberSelectionItem queryType="0" memberName="SAR" substVar="" dimension="Currency" sequence="1.0" />
+</compareToValueMbrSelection>
+</compareToValue>
+</dataValidationCond>
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="11" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="5" styleId="0" type="2" bgColor="" Valid="true" logicalOperator="0" >
+ <compareValue type="14" value="Account" >
+</compareValue>
+ <compareToValue type="7" value="" >
+ <compareToValueMbrSelection type="2" requiredDimName="Account" selectionMode="2" >
+ <memberSelectionItem queryType="0" memberName="Basic Salary" substVar="" dimension="Account" sequence="1.0" />
+ <memberSelectionItem queryType="0" memberName="Housing Allowance" substVar="" dimension="Account" sequence="2.0" />
+ <memberSelectionItem queryType="0" memberName="Vacation Allowance" substVar="" dimension="Account" sequence="3.0" />
+ <memberSelectionItem queryType="0" memberName="Transportation Allowance" substVar="" dimension="Account" sequence="4.0" />
+</compareToValueMbrSelection>
+</compareToValue>
+</dataValidationCond>
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="6" styleId="32772" type="5" bgColor="11591910" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="false" description="" rowLocation="1.0" colLocation="-1.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="true" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32774" type="8" bgColor="16747520" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="1.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32780" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="3.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32782" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="5.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32784" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="7.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32786" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="9.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32788" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="8.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32787" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="6.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32785" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="4.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32783" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="2.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32781" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="13.0" colLocation="0.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32779" type="8" bgColor="15792383" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="11.0" colLocation="0.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32777" type="8" bgColor="15792383" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="12.0" colLocation="0.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32778" type="8" bgColor="15792383" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="10.0" colLocation="0.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32776" type="8" bgColor="15792383" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRule position="3" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="1.0" colLocation="0.0" >
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32775" type="8" bgColor="16747520" Valid="true" logicalOperator="0" >
+ <compareValue type="6" value="" >
+</compareValue>
+ <compareToValue type="0" value="" >
+</compareToValue>
+</dataValidationCond>
+</dataValidationRule>
+ <dataValidationRulesOptions>
+ <RunValidationsAsLoggedInUser>true</RunValidationsAsLoggedInUser>
+ <ValidateOnlyForPagesWithBlocks>true</ValidateOnlyForPagesWithBlocks>
+ <ValidateOnlyForUsersWithAccessToForm>true</ValidateOnlyForUsersWithAccessToForm>
+ <ReplaceUserVarWithPuMember>false</ReplaceUserVarWithPuMember>
+ <LoopOverEveryPossiblePuUserVarValue>false</LoopOverEveryPossiblePuUserVarValue>
+</dataValidationRulesOptions>
+</dataValidationRules>
+ <formFormattings>
+ <formFormatting designTime="true" userName="[CURRENT_USER]" displayOptions="-2147483646" >
+ <dataCellMbrTuples>
+ <dataCellMbrTuple>
+ <cellStyleId>32771</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32771.0" dim="Employee" />
+ <mbr name="Position" segment="32771.0" dim="Position" />
+ <mbr name="Currency" segment="32771.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="61110101" segment="32771.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32772</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32772.0" dim="Employee" />
+ <mbr name="Position" segment="32772.0" dim="Position" />
+ <mbr name="Currency" segment="32772.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="61110101" segment="32772.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32773</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32773.0" dim="Employee" />
+ <mbr name="Position" segment="32773.0" dim="Position" />
+ <mbr name="Currency" segment="32773.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Gross Salary" segment="32773.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32774</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32774.0" dim="Employee" />
+ <mbr name="Position" segment="32774.0" dim="Position" />
+ <mbr name="Currency" segment="32774.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Grade Reference" segment="32774.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32775</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32775.0" dim="Employee" />
+ <mbr name="Position" segment="32775.0" dim="Position" />
+ <mbr name="Currency" segment="32775.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Grade Reference" segment="32775.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32776</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="New Employees" segment="32776.0" dim="Employee" />
+ <mbr name="All Positions" segment="32776.0" dim="Position" />
+ <mbr name="Input Currencies" segment="32776.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Grade Reference" segment="32776.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32777</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="New Employees" segment="32777.0" dim="Employee" />
+ <mbr name="All Positions" segment="32777.0" dim="Position" />
+ <mbr name="Input Currencies" segment="32777.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Grade Reference" segment="32777.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32778</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="All Positions" segment="32778.0" dim="Position" />
+ <mbr name="Input Currencies" segment="32778.0" dim="Currency" />
+ <mbr name="New Employees by Activities" segment="32778.0" dim="Employee" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Grade Reference" segment="32778.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32779</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="All Positions" segment="32779.0" dim="Position" />
+ <mbr name="Input Currencies" segment="32779.0" dim="Currency" />
+ <mbr name="New Employees by Activities" segment="32779.0" dim="Employee" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Grade Reference" segment="32779.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32780</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32780.0" dim="Employee" />
+ <mbr name="Position" segment="32780.0" dim="Position" />
+ <mbr name="Currency" segment="32780.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Grade Reference" segment="32780.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32781</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32781.0" dim="Employee" />
+ <mbr name="Position" segment="32781.0" dim="Position" />
+ <mbr name="Currency" segment="32781.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Nationality" segment="32781.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32782</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32782.0" dim="Employee" />
+ <mbr name="Position" segment="32782.0" dim="Position" />
+ <mbr name="Currency" segment="32782.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Hire Date" segment="32782.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32783</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32783.0" dim="Employee" />
+ <mbr name="Position" segment="32783.0" dim="Position" />
+ <mbr name="Currency" segment="32783.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Remarks" segment="32783.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32784</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32784.0" dim="Employee" />
+ <mbr name="Position" segment="32784.0" dim="Position" />
+ <mbr name="Currency" segment="32784.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Gross Salary" segment="32784.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32785</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32785.0" dim="Employee" />
+ <mbr name="Position" segment="32785.0" dim="Position" />
+ <mbr name="Currency" segment="32785.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="61110101" segment="32785.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32786</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32786.0" dim="Employee" />
+ <mbr name="Position" segment="32786.0" dim="Position" />
+ <mbr name="Currency" segment="32786.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Annual Airfare Allowance" segment="32786.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32787</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32787.0" dim="Employee" />
+ <mbr name="Position" segment="32787.0" dim="Position" />
+ <mbr name="Currency" segment="32787.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Education Allowance" segment="32787.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+ <dataCellMbrTuple>
+ <cellStyleId>32788</cellStyleId>
+ <frmMbrTuple>
+ <gridLocation>rows</gridLocation>
+ <mbr name="Employee" segment="32788.0" dim="Employee" />
+ <mbr name="Position" segment="32788.0" dim="Position" />
+ <mbr name="Currency" segment="32788.0" dim="Currency" />
+</frmMbrTuple>
+ <frmMbrTuple>
+ <gridLocation>columns</gridLocation>
+ <mbr name="Employer Pension Contribution" segment="32788.0" dim="Account" />
+</frmMbrTuple>
+</dataCellMbrTuple>
+</dataCellMbrTuples>
+ <cellStyles>
+ <cellStyle id="32771" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <readOnly>false</readOnly>
+ <backColor id="32769" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32772" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <readOnly>false</readOnly>
+ <backColor id="32769" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32773" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <readOnly>false</readOnly>
+ <backColor id="32769" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32774" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32768" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32775" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32768" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32776" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32770" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32777" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32770" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32778" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32770" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32779" >
+ <objs>
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32770" />
+ <wordWrap>false</wordWrap>
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32780" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32781" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32782" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32783" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32784" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32785" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32786" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32787" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+ <cellStyle id="32788" >
+ <objs>
+ <obj type="border" id="32768" />
+ <obj type="border" id="32769" />
+ <obj type="border" id="32770" />
+ <obj type="border" id="32771" />
+</objs>
+ <cellStyleValues>
+ <font id="32768" />
+ <readOnly>false</readOnly>
+ <backColor id="32772" />
+ <txtColor id="32771" />
+ <wordWrap>false</wordWrap>
+ <format id="1" />
+</cellStyleValues>
+</cellStyle>
+</cellStyles>
+ <columnRowSizes>
+</columnRowSizes>
+ <values>
+ <colors>
+ <color R="255" G="140" B="0" id="32768" />
+ <color R="176" G="224" B="230" id="32769" />
+ <color R="240" G="248" B="255" id="32770" />
+ <color R="255" G="255" B="255" id="32771" />
+ <color R="11" G="37" B="49" id="32772" />
+</colors>
+ <fonts>
+ <font id="32768" >Arial</font>
+</fonts>
+ <txtFrmts>
+ <txtFrmt id="0" >Italic</txtFrmt>
+ <txtFrmt id="1" >Bold</txtFrmt>
+ <txtFrmt id="2" >Underline</txtFrmt>
+ <txtFrmt id="3" >StrikeThrough</txtFrmt>
+</txtFrmts>
+ <vAlign>
+</vAlign>
+ <hAlign>
+</hAlign>
+</values>
+ <objs>
+ <numFrmts>
+</numFrmts>
+ <borders>
+ <border>
+ <id>32768</id>
+ <color R="255" G="255" B="255" />
+ <placement>Top</placement>
+ <style>solid</style>
+ <width>0.4</width>
+</border>
+ <border>
+ <id>32769</id>
+ <color R="255" G="255" B="255" />
+ <placement>Right</placement>
+ <style>solid</style>
+ <width>0.4</width>
+</border>
+ <border>
+ <id>32770</id>
+ <color R="255" G="255" B="255" />
+ <placement>Bottom</placement>
+ <style>solid</style>
+ <width>0.4</width>
+</border>
+ <border>
+ <id>32771</id>
+ <color R="255" G="255" B="255" />
+ <placement>Left</placement>
+ <style>solid</style>
+ <width>0.4</width>
+</border>
+</borders>
+</objs>
+</formFormatting>
+</formFormattings>
+ <smartpush>
+</smartpush>
+</form>
