@@ -1,70 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" ?>
- <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" options2="0" suppressMissingRowsNative="false" enableOffline="false" smartForm="false" hide="false" disableSpreading="false" suppressZero="false" calcOnAutoSubmit="false" enableCubeView="false" repeatMemberLabels="false" suppressInvalidScenarioTPs="false" disableSheetProtection="false" planType="1" dir="Forms/Adetth_Do_Not_Delete" autoSubmit="false" readOnly="false" enableFlexForm="false" nativeSuppressMissingRowsOfSmartPush="false" runSmartPushAsynchronously="false" globalAssumptions="false" disableFormatting="false" name="Adetth - Segment Properties Changed" >
+<?xml version='1.0' encoding='UTF-8'?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" options2="0" suppressMissingRowsNative="false" enableOffline="false" smartForm="false" hide="false" disableSpreading="false" suppressZero="false" calcOnAutoSubmit="false" enableCubeView="false" repeatMemberLabels="false" suppressInvalidScenarioTPs="false" disableSheetProtection="false" planType="1" dir="Forms/Adetth_Do_Not_Delete" autoSubmit="false" readOnly="false" enableFlexForm="false" nativeSuppressMissingRowsOfSmartPush="false" runSmartPushAsynchronously="false" globalAssumptions="false" disableFormatting="false" name="Adetth - Segment Properties Changed" >
  <pipPrefs>{&quot;_sP&quot;:{&quot;_sVer&quot;:1.2},&quot;historicalScenarioId&quot;:-1,&quot;historicalVersionId&quot;:-1,&quot;historicalSource&quot;:-1,&quot;historicalCubePrefsMap&quot;:{},&quot;memberOverride&quot;:[],&quot;_predictionOptions&quot;:{&quot;_predictionInterval&quot;:2,&quot;_isImputeFutureValues&quot;:false,&quot;_errorMeasure&quot;:3,&quot;_forecastTechnique&quot;:0,&quot;_leadValue&quot;:0,&quot;_holdOutPeriod&quot;:0,&quot;_AdjustOutliers&quot;:true,&quot;_FillInMissingValues&quot;:true,&quot;_PeriodsPerCycle&quot;:0,&quot;_yearlySeasonalOverride&quot;:false,&quot;_SeasonalMethods&quot;:true,&quot;_NonSeasonalMethods&quot;:true,&quot;_ARIMA&quot;:true,&quot;_ARIMAExtendedSearch&quot;:false,&quot;_BoxCoxTransformationType&quot;:0,&quot;_ARIMAModelSelectionType&quot;:2,&quot;_ScreenDetectionMethod&quot;:0,&quot;_MSDStdDev&quot;:3.0,&quot;_MADStdDev&quot;:3.0,&quot;_IQDStdDev&quot;:2.22,&quot;_ScreenAdjustmentMethod&quot;:0,&quot;_neighborInterpolationType&quot;:0,&quot;_Neighbors&quot;:1,&quot;_IncludeEvents&quot;:false,&quot;_AutomaticallyDetectEvents&quot;:0,&quot;_accuracyThreshold&quot;:0.0,&quot;_minimumMissingValueThreshold&quot;:50.0,&quot;_predictionPeriodOverride&quot;:false,&quot;_fillMissingLastPeriodHistData&quot;:0},&quot;_calendarUuid&quot;:null,&quot;_predictDynCalcMbrs&quot;:false,&quot;_sVer&quot;:1.2}</pipPrefs>
  <query>
- <columns width="100" >
+ <columns width="100">
  <segment>
- <dimension displayMemberFormulaDesc="false" name="Period" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
- <function name="ILvl0Descendants" offset="0" >
+ <dimension displayMemberFormulaDesc="false" name="Period" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false">
+ <function name="ILvl0Descendants" offset="0">
  <member name="YearTotal" selectionType="Auto" />
 </function>
 </dimension>
 </segment>
  <segment>
- <dimension displayMemberFormulaDesc="false" name="Period" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Period" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false">
  <formula ordinal="1.0" dataType="0" label="Test Column" formulaValue="" />
 </dimension>
 </segment>
 </columns>
- <rows height="22" >
- <segment size="-4" showSeparator="true" >
- <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
+ <rows height="22">
+ <segment size="-4" showSeparator="true">
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false">
  <formula ordinal="1.0" dataType="0" label="Test Row" formulaValue="" />
 </dimension>
 </segment>
  <segment>
- <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false" >
- <function name="Descendants" offset="0" >
+ <dimension displayMemberFormulaDesc="false" name="Account" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" enableDropdown="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" expand="true" displayConsolidationOperators="false" showCurrency="false">
+ <function name="Descendants" offset="0">
  <member name="Balance Sheet_Training" selectionType="Auto" />
 </function>
 </dimension>
 </segment>
 </rows>
  <pov>
- <dimension displayMemberFormulaDesc="false" name="Years" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Years" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Year" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Scenario" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Scenario" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="OEP_No Scenario" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Version" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Version" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="OEP_No Version" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Currency" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Currency" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Entity" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Entity" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Entity" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Product" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Product" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Product" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Employee data" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Employee data" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Employee data" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Cost Center" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Cost Center" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Cost Center" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Intercompany" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Intercompany" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No InterCompany" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="LoB" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="LoB" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No LoB" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Department" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Department" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Department" selectionType="Auto" visible="true" />
 </dimension>
- <dimension displayMemberFormulaDesc="false" name="Value" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false" >
+ <dimension displayMemberFormulaDesc="false" name="Value" allowFlexibleDefinition="false" displayAlias="false" applyToAllDim="false" displayMemberFormula="false" dimWidth="0" hide="false" showQualifiedName="never" drillOnSharedMbrs="false" displayName="true" displayConsolidationOperators="false" showCurrency="false">
  <member name="No Value" selectionType="Auto" visible="true" />
 </dimension>
 </pov>
@@ -84,43 +84,43 @@
  <smartViewOptions enableForSmartSlice="false" enableOfflineUsage="false" />
 </displayOptions>
  <dataValidationRules>
- <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="1.0" colLocation="-1.0" >
- <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32770" type="8" bgColor="16747520" Valid="true" logicalOperator="0" >
- <compareValue type="6" value="" >
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="1.0" colLocation="-1.0">
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32770" type="8" bgColor="16747520" Valid="true" logicalOperator="0">
+ <compareValue type="6" value="">
 </compareValue>
- <compareToValue type="0" value="" >
+ <compareToValue type="0" value="">
 </compareToValue>
 </dataValidationCond>
 </dataValidationRule>
- <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="1.0" colLocation="0.0" >
- <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32769" type="8" bgColor="16747520" Valid="true" logicalOperator="0" >
- <compareValue type="6" value="" >
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="1.0" colLocation="0.0">
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32769" type="8" bgColor="16747520" Valid="true" logicalOperator="0">
+ <compareValue type="6" value="">
 </compareValue>
- <compareToValue type="0" value="" >
+ <compareToValue type="0" value="">
 </compareToValue>
 </dataValidationCond>
 </dataValidationRule>
- <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="2.0" >
- <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32773" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
- <compareValue type="6" value="" >
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="2.0">
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32773" type="8" bgColor="730417" Valid="true" logicalOperator="0">
+ <compareValue type="6" value="">
 </compareValue>
- <compareToValue type="0" value="" >
+ <compareToValue type="0" value="">
 </compareToValue>
 </dataValidationCond>
 </dataValidationRule>
- <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="1.0" >
- <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32772" type="8" bgColor="730417" Valid="true" logicalOperator="0" >
- <compareValue type="6" value="" >
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="0.0" colLocation="1.0">
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32772" type="8" bgColor="730417" Valid="true" logicalOperator="0">
+ <compareValue type="6" value="">
 </compareValue>
- <compareToValue type="0" value="" >
+ <compareToValue type="0" value="">
 </compareToValue>
 </dataValidationCond>
 </dataValidationRule>
- <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="3.0" colLocation="0.0" >
- <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32771" type="8" bgColor="15792383" Valid="true" logicalOperator="0" >
- <compareValue type="6" value="" >
+ <dataValidationRule position="1" name="New Rule" enabled="true" customStyle="true" description="" rowLocation="3.0" colLocation="0.0">
+ <dataValidationCond toolTip="" groupOpenNestingLevel="0" operator="0" displayMessageInDVPane="false" honorPmRules="false" negate="false" groupCloseNestingLevel="0" position="1" styleId="32771" type="8" bgColor="15792383" Valid="true" logicalOperator="0">
+ <compareValue type="6" value="">
 </compareValue>
- <compareToValue type="0" value="" >
+ <compareToValue type="0" value="">
 </compareToValue>
 </dataValidationCond>
 </dataValidationRule>
@@ -133,7 +133,7 @@
 </dataValidationRulesOptions>
 </dataValidationRules>
  <formFormattings>
- <formFormatting designTime="true" userName="[CURRENT_USER]" displayOptions="-2147483646" >
+ <formFormatting designTime="true" userName="[CURRENT_USER]" displayOptions="-2147483646">
  <dataCellMbrTuples>
  <dataCellMbrTuple>
  <cellStyleId>32769</cellStyleId>
@@ -192,7 +192,7 @@
 </dataCellMbrTuple>
 </dataCellMbrTuples>
  <cellStyles>
- <cellStyle id="32769" >
+ <cellStyle id="32769">
  <objs>
 </objs>
  <cellStyleValues>
@@ -202,7 +202,7 @@
  <wordWrap>false</wordWrap>
 </cellStyleValues>
 </cellStyle>
- <cellStyle id="32770" >
+ <cellStyle id="32770">
  <objs>
 </objs>
  <cellStyleValues>
@@ -212,7 +212,7 @@
  <wordWrap>false</wordWrap>
 </cellStyleValues>
 </cellStyle>
- <cellStyle id="32771" >
+ <cellStyle id="32771">
  <objs>
 </objs>
  <cellStyleValues>
@@ -222,7 +222,7 @@
  <wordWrap>false</wordWrap>
 </cellStyleValues>
 </cellStyle>
- <cellStyle id="32772" >
+ <cellStyle id="32772">
  <objs>
  <obj type="border" id="32768" />
  <obj type="border" id="32769" />
@@ -238,7 +238,7 @@
  <format id="1" />
 </cellStyleValues>
 </cellStyle>
- <cellStyle id="32773" >
+ <cellStyle id="32773">
  <objs>
  <obj type="border" id="32768" />
  <obj type="border" id="32769" />
@@ -259,19 +259,19 @@
 </columnRowSizes>
  <values>
  <colors>
- <color R="255" G="140" B="0" id="32768" />
+ <color R="221" G="255" B="0" id="32768" />
  <color R="240" G="248" B="255" id="32769" />
  <color R="255" G="255" B="255" id="32770" />
  <color R="11" G="37" B="49" id="32771" />
 </colors>
  <fonts>
- <font id="32768" >Arial</font>
+ <font id="32768">Arial</font>
 </fonts>
  <txtFrmts>
- <txtFrmt id="0" >Italic</txtFrmt>
- <txtFrmt id="1" >Bold</txtFrmt>
- <txtFrmt id="2" >Underline</txtFrmt>
- <txtFrmt id="3" >StrikeThrough</txtFrmt>
+ <txtFrmt id="0">Italic</txtFrmt>
+ <txtFrmt id="1">Bold</txtFrmt>
+ <txtFrmt id="2">Underline</txtFrmt>
+ <txtFrmt id="3">StrikeThrough</txtFrmt>
 </txtFrmts>
  <vAlign>
 </vAlign>
